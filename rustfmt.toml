@@ -1,0 +1,3 @@
+group_imports = "StdExternalCrate" # nightly only
+imports_granularity = "Module"
+use_small_heuristics = "Max"

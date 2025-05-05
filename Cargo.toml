@@ -1,0 +1,19 @@
+[package]
+name = "aoc"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+hashbrown = { version = "0.15.3", features = ["nightly"] }
+itertools = "0.14.0"
+
+[profile.release]
+lto = "fat"
+codegen-units = 1
+
+[workspace.lints.clippy]
+all = "deny"
+pedantic = "deny"
+restriction = "deny"
+nursery = "deny"
+cargo = "deny"
