@@ -5,5 +5,5 @@ macro_rules! test {
 }
 
 test!(year2024
-    day01, day02
+    day01, day02, day03
 );
