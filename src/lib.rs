@@ -12,9 +12,9 @@ macro_rules! library {
 }
 
 library!(util "Utility modules to handle common recurring Advent of Code patterns."
-    ansi, integer, parse
+    ansi, grid, integer, parse, point
 );
 
 library!(year2024 "Locate the Chief Historian in time for the big Christmas sleigh launch."
-    day01, day02, day03, day04, day05, day06, day07, day08, day09
+    day01, day02, day03, day04, day05, day06, day07, day08, day09, day10
 );
