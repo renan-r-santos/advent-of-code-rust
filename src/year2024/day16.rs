@@ -1,7 +1,5 @@
 //! Reindeer Maze
 
-use std::i32;
-
 use hashbrown::HashMap;
 
 use crate::util::grid::*;
