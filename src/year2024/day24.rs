@@ -49,8 +49,8 @@ pub fn part1(&(vars, eqs): &Input) -> u64 {
 
         values.insert(var, value);
 
-        if var.starts_with('z') {
-            let bit_position = var[1..].parse::<u8>().unwrap();
+        if let Some(stripped) = var.strip_prefix('z') {
+            let bit_position = stripped.parse::<u8>().unwrap();
             if value {
                 result |= 1u64 << bit_position;
             }
